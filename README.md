@@ -21,17 +21,20 @@ Contains the following algorithms:
 
 ## Results
 
-__Validation RMSE for different Matrix-Factorization-based Approaches__
+__Validation RMSE for different Matrix-Factorization-based Approaches:__
+
 ![Validation RMSE for different Matrix-Factorization-based Approaches](https://github.com/RafaelSterzinger/CIL-Recommender-Systems/blob/main/report/figures/rank.png)
 
 Validation RMSE for different rank values. NMF performs best with a rank of 24 while others peak around 8 to 12.
 
-__Validation RMSE for different Neural-based Approaches__
+__Validation RMSE for different Neural-based Approaches:__
+
 ![Validation RMSE for different Neural-based Approaches](https://github.com/RafaelSterzinger/CIL-Recommender-Systems/blob/main/report/figures/validation_plot.png)
 
 Validation RMSE for different epochs. AutoRec and NCF diverge after a few epochs while KernelNet and AE show the opposite behaviour.
 
-__Heatmap of Bayesian Factorization Machine__
+__Heatmap of Bayesian Factorization Machine:__
+
 ![Heatmap of Bayesian Factorization Machine](https://github.com/RafaelSterzinger/CIL-Recommender-Systems/blob/main/report/figures/heatmap.png?raw=true)
 
 Validation RMSE for different values of sample size and rank. We conduct the hyperparameter search on our second best model, BMF SVD++ flipped, due to the high computational burden of our best. Low-rank approximations of 8 to 12 with high sampling sizes perform best.
