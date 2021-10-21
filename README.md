@@ -1,7 +1,11 @@
 # Collaborative Filtering
 
 This repository is part of the solutions for the course Computational Intelligence Lab at ETH Zurich, Spring Semester
-2021.
+2021. Our solution achieved first place on the leaderboard for Collaborative Filtering.
+
+__Abstract:__ Collaborative filtering methods for recommender systems find their application in a wide variety of areas.
+In this work we consider several neural-based and standard matrix-factorization-based models, placing our focus on Bayesian Factorization Machines.
+We extended these by adding additional features such as implicit user/item information, multiple user similarity measures, item distance metrics, as well as unsupervised-learned clusters and report results in an extensive benchmark.
 
 ## Overview
 
@@ -14,6 +18,23 @@ Contains the following algorithms:
 - Neural Collaborative Filtering
 - Kernel Net
 - Bayesian Factorization Machine
+
+## Results
+
+__Validation RMSE for different Matrix-Factorization-based Approaches__
+![Validation RMSE for different Matrix-Factorization-based Approaches](https://github.com/RafaelSterzinger/CIL-Recommender-Systems/blob/main/report/figures/rank.png)
+
+Validation RMSE for different rank values. NMF performs best with a rank of 24 while others peak around 8 to 12.
+
+__Validation RMSE for different Neural-based Approaches__
+![Validation RMSE for different Neural-based Approaches](https://github.com/RafaelSterzinger/CIL-Recommender-Systems/blob/main/report/figures/validation_plot.png)
+
+Validation RMSE for different epochs. AutoRec and NCF diverge after a few epochs while KernelNet and AE show the opposite behaviour.
+
+__Heatmap of Bayesian Factorization Machine__
+![Heatmap of Bayesian Factorization Machine](https://github.com/RafaelSterzinger/CIL-Recommender-Systems/blob/main/report/figures/heatmap.png?raw=true)
+
+Validation RMSE for different values of sample size and rank. We conduct the hyperparameter search on our second best model, BMF SVD++ flipped, due to the high computational burden of our best. Low-rank approximations of 8 to 12 with high sampling sizes perform best.
 
 ## Reproduce Results
 
